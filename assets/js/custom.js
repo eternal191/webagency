@@ -5,6 +5,9 @@
         preloader();
         mouseCirMove();
 
+       /*load social media links from social_media_links.html file*/
+      $(".footer-container").load("./assets/includes/social_media_links.html");
+
 
         /**
          * Execute data after ajax
