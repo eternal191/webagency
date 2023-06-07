@@ -2404,7 +2404,8 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 60px;
           flex: 0 1 60px;
-  margin-left: 60px;
+  /*remove the margin from the about us page icons*/
+  /*margin-left: 60px;*/
 }
 @media only screen and (max-width: 767px) {
   .service-lest-item .icon {
