@@ -3261,6 +3261,10 @@ body:not(.dsn-line-style).nav-bg.hide-nav .site-header {
   }
 }
 
+.box-gallery-vertical .accordion .accordion__answer > p {
+  margin-bottom: 1rem;
+}
+
 .box-gallery-vertical .box-info .service-lest-item .icon,
 .box-descr .box-info .service-lest-item .icon {
   margin-left: 0;
