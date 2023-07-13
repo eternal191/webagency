@@ -5,6 +5,7 @@
 
   /*load social media links from social_media_links.html file*/
   $(".footer-container").load("./assets/includes/social_media_links.html");
+  $(".next-page.background-section").load("./assets/includes/footer_content.html");
 
   /**
    * Execute data after ajax
@@ -2513,7 +2514,7 @@
       script.type = "text/javascript";
       script.id = "map_api";
       script.src =
-        "https://maps.googleapis.com/maps/api/js?key=" + GOOGLE_MAP_KEY + "&callback=initMap"; //& needed
+        "https://maps.googleapis.com/maps/api/js?key=" + GOOGLE_MAP_KEY; //& needed
       document.body.appendChild(script);
       GOOGLE_MAP_KEY = script = null;
     }
@@ -2608,7 +2609,7 @@
               "elementType": "labels.text.fill",
               "stylers": [
                 {
-                  "color": "#757575"
+                  "color": "#14bfb5"
                 }
               ]
             },
@@ -2671,7 +2672,7 @@
               "elementType": "geometry",
               "stylers": [
                 {
-                  "color": "#3c3c3c"
+                  "color": "#14bfb5"
                 }
               ]
             },
@@ -2707,7 +2708,7 @@
               "elementType": "geometry",
               "stylers": [
                 {
-                  "color": "#000000"
+                  "color": "#0E81B4FF"
                 }
               ]
             },
@@ -2716,7 +2717,7 @@
               "elementType": "labels.text.fill",
               "stylers": [
                 {
-                  "color": "#3d3d3d"
+                  "color": "#ffffff"
                 }
               ]
             }
