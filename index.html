@@ -42,8 +42,9 @@
     <link rel="preload" href="assets/img/circle-dotted.png" as="image" />
 
     <!-- custom styles (optional) -->
-    <link href="assets/css/plugins.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="assets/css/plugins.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/threedbanner.css"/>
   </head>
 
   <!--classic-menu-->
@@ -214,18 +215,10 @@
           <header
             class="header-project full-width p-relative h-100-v over-hidden dsn-header-animation v-dark-head"
           >
-            <div
-              data-dsn-ajax="img"
-              class="p-absolute dsn-hero-parallax-img w-100 h-100 over-hidden"
-              data-overlay="5"
-            >
-              <img
-                class="cover-bg-img"
-                src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
-                data-dsn-src="assets/img/header.jpg"
-                alt=""
-              />
-            </div>
+
+						<div id="magic"></div>
+
+
 
             <div
               class="d-flex align-items-end pb-80 pt-80 h-100 dsn-container dsn-hero-parallax-title"
@@ -258,6 +251,9 @@
                 </div>
               </div>
             </div>
+
+
+
           </header>
           <!-- ========== End Header  ========== -->
 
@@ -1811,5 +1807,38 @@
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/dsn-grid.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+		<script type="x-shader/x-vertex" id="vertexshader">
+
+			attribute float size;
+			attribute vec3 customColor;
+			varying vec3 vColor;
+
+			void main() {
+
+				vColor = customColor;
+				vec4 mvPosition = modelViewMatrix * vec4( position, 1.0 );
+				gl_PointSize = size * ( 300.0 / -mvPosition.z );
+				gl_Position = projectionMatrix * mvPosition;
+
+			}
+
+		</script>
+		<script type="x-shader/x-fragment" id="fragmentshader">
+
+			uniform vec3 color;
+			uniform sampler2D pointTexture;
+
+			varying vec3 vColor;
+
+			void main() {
+
+				gl_FragColor = vec4( color * vColor, 1.0 );
+				gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
+
+			}
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js'></script>
+		<script src="./assets/js/threeDbanner/script.js"></script>
   </body>
 </html>

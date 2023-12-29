@@ -1,0 +1,10 @@
+#magic {
+
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    top: -100px;
+    left: 100px;
+    z-index: -9999;
+}
