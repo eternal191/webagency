@@ -3,8 +3,8 @@
   preloader();
   mouseCirMove();
 
-  /*load social media links from social_media_links.html file*/
   $(".footer-container").load("./assets/includes/social_media_links.html");
+  /*load social media links from social_media_links.html file*/
   $(".next-page.background-section").load("./assets/includes/footer_content.html");
   $(".contact-modal.background-section").load("./assets/includes/contact_page_popup.html");
 
