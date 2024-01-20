@@ -4,4 +4,4 @@ node_modules/
 .htaccess
 package.json
 package-lick.json
-
+assets/.DS_Store
