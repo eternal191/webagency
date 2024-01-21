@@ -5316,3 +5316,7 @@ body.dsn-show-contact .contact-modal {
 .box-seat .pro-text {
   bottom: -120px;
 }
+
+h1.title.dsn-load-animate {
+  font-size: 35px;
+}
