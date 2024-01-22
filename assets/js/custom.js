@@ -2816,4 +2816,41 @@
       });
     });
   }
+
+  // Check if the device is a tablet and in landscape view
+  function isTabletInLandscape() {
+    // Check if the device is a tablet based on screen width
+    var isTablet = window.matchMedia("(max-width: 1024px)").matches;
+
+    // Check if the device is in landscape view based on screen height
+    var isLandscape = window.matchMedia("(orientation: landscape)").matches;
+
+    // Return true if the device is a tablet and in landscape view
+    return isTablet && isLandscape;
+  }
+
+// Usage example
+/*  if (isTabletInLandscape()) {
+    // Code to execute if the device is a tablet and in landscape view
+    console.log("Device is a tablet in landscape view");
+    $('div#magic').css('display', 'none');
+    $('div.swaped_headerbkg').css('display', 'block');
+  }*/
+
+  // Function to handle orientation change
+  function handleOrientationChange() {
+    if (isTabletInLandscape()) {
+      $('div#magic').css('display', 'none');
+      $('div.swaped_headerbkg').css('display', 'block');
+    } else {
+      $('div#magic').css('display', 'block');
+      $('div.swaped_headerbkg').css('display', 'none');
+    }
+  }
+
+  //handleOrientationChange();
+
+// Attach the event listener
+  //window.addEventListener("orientationchange", handleOrientationChange);
+
 })(jQuery);

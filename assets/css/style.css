@@ -5332,3 +5332,33 @@ h1.title.dsn-load-animate {
   content: "";
    margin-right: 0px;
 }
+
+
+
+@media only screen and (min-width: 768px) {
+  div#magic {
+    display: block;
+  }
+  .swaped_headerbkg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  div#magic {
+    display: none;
+  }
+  .swaped_headerbkg {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* CSS rules for tablet in landscape view */
+  div#magic {
+    display: none;
+  }
+  .swaped_headerbkg {
+    display: block;
+  }
+}
