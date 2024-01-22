@@ -5327,3 +5327,8 @@ h1.title.dsn-load-animate {
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard syntax */
 }
+
+.item-resume-box .line-shap:not(.line-shap-after):before {
+  content: "";
+   margin-right: 0px;
+}
