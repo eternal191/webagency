@@ -5321,6 +5321,12 @@ h1.title.dsn-load-animate {
   font-size: 35px;
 }
 
+@media only screen and (max-width: 768px) {
+  h1.title.dsn-load-animate {
+    font-size: 25px;
+  }
+}
+
 .non-selectable {
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
@@ -5353,12 +5359,28 @@ h1.title.dsn-load-animate {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .mobile_home_bkg {
+    display: none;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   /* CSS rules for tablet in landscape view */
   div#magic {
     display: none;
   }
   .swaped_headerbkg {
-    display: block;
+    display: none;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  h1.title.v-middle {
+    font-size: 25px;
   }
 }
+
