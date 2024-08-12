@@ -5,3 +5,5 @@ node_modules/
 package.json
 package-lick.json
 assets/.DS_Store
+.DS_Store
+

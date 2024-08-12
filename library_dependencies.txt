@@ -1,0 +1,28 @@
+portfolio plugins 
+  http://scrollmagic.io v2.0.7
+
+ScrollToPlugin 3.5.1
+  https://greensock.com
+
+https://isotope.metafizzy.co v3.0.6
+
+smooth scrolbar 
+
+https://swiperjs.com version 6.3.5
+
+
+Magnific Popup - v1.1.0 - 2016-02-20
+ http://dimsemenov.com/plugins/magnific-popup/
+
+justifiedGallery - v3.8.0
+http://miromannino.github.io/Justified-Gallery/
+
+ Version: 1.0.1
+ Plugin URL: http://wp-time.com/youtube-popup-jquery-plugin/
+
+
+ Splitting.js
+ https://splitting.js.org/guide.html
+												
+get width and height of a image command
+sips -g pixelWidth -g pixelHeight piano.jpg
