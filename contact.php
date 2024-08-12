@@ -6,7 +6,7 @@
 
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'eternal191@gmail.com';
+$sendTo = 'glewis@digitaldimensionz.tech';
 
 
 
